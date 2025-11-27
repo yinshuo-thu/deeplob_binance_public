@@ -1,0 +1,42 @@
+{
+  "api": {
+    "key": "TD.sDyJS7YZ6oPWSgy2.-vZySO46Lv8avKO.ixQvOq9xdhxqnzC.p1rlPahcqt4F3pp.uORrUOeq0hqYOhV.w6s4",
+    "exchange": "binance-futures",
+    "data_type": "book_snapshot_25"
+  },
+  "data": {
+    "from_date": "2025-08-01",
+    "to_date": "2025-11-01",
+    "num_symbols": 45,
+    "candidates_file": "candidates.txt"
+  },
+  "processing": {
+    "downsample_freq": "1s",
+    "return_window": 10,
+    "lob_levels": 10
+  },
+  "performance": {
+    "max_workers": 16,
+    "use_cpu_percentage": 0.8
+  },
+  "paths": {
+    "output_dir": "/root/local-nvme/data_3m_fast",
+    "download_dir": "/root/local-nvme/downloads_temp"
+  },
+  "output": {
+    "format": "parquet",
+    "compression": "snappy",
+    "delete_raw_files": true,
+    "verbose": true
+  },
+  "comments": {
+    "description": "DeepLOB\u6570\u636e\u91c7\u96c6\u7cfb\u7edf\u914d\u7f6e\u6587\u4ef6",
+    "usage": "\u4fee\u6539\u6b64\u6587\u4ef6\u6765\u8c03\u6574\u91c7\u96c6\u53c2\u6570",
+    "max_workers": "\u5e76\u884c\u8fdb\u7a0b\u6570\uff0c\u5c06\u4f7f\u7528 min(CPU\u6838\u5fc3\u6570 * use_cpu_percentage, max_workers)",
+    "scenarios": {
+      "quick_test": "3\u6807\u7684\u00d77\u5929 = 2\u5206\u949f, 150MB",
+      "model_training": "10\u6807\u7684\u00d71\u6708 = 20\u5206\u949f, 2GB",
+      "large_scale": "50\u6807\u7684\u00d73\u5e74 = 36\u5c0f\u65f6, 375GB"
+    }
+  }
+}

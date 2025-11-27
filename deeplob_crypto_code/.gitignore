@@ -1,0 +1,73 @@
+# Log files
+log/
+*.log
+
+# Data files and directories
+data_*/
+*.npy
+*.npz
+downloads_temp/
+test_lob_downloads/
+test_single_symbol/
+
+# Model files and outputs
+models_per_symbol/
+*_models/
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.h5
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+envs/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+lost+found/
+
+# Temporary files
+*.tmp
+*.bak
+*.pid
+
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Large data files
+*.csv.gz
+*.csv
+*.json.gz
+
+# PDF files
+*.pdf
+
+# Image outputs and report directories
+image/
+report_figures/
+report_tables/
+
+# Allow backup directory to be tracked
+# backup/
