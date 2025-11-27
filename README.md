@@ -1,6 +1,8 @@
 # DeepLOB Binance - Cryptocurrency LOB Prediction
 
-**Author**: [Shuo Yin](https://yinshuo-thu.github.io/) (yins25@mails.tsinghua.edu.cn)
+ [Shuo Yin](https://yinshuo-thu.github.io/)
+
+yins25@mails.tsinghua.edu.cn
 
 This repository contains a **Millennium ML Internship Take-Home Project** focused on building high-frequency limit order book (LOB) prediction models for cryptocurrency markets using deep learning.
 
@@ -32,33 +34,15 @@ deeplob-binance-github/
 This project implements and improves upon the **DeepLOB architecture** for predicting 10-second returns from cryptocurrency limit order book data on Binance. 
 
 **Key Models Explored:**
-- DeepLOB Baseline (CNN-LSTM)
+- DeepLOB Baseline 
 - DeepLOB with EMA Smoothing
-- DeepLOB-TCN (Temporal Convolutional Networks)
+- DeepLOB-TCN 
 - Hierarchical Multi-Task Learning
-
-**Best Performance**: TCN + EMA achieves **0.31 correlation** and **2.55 BPS MAE** across 30 crypto symbols.
 
 For detailed methodology, results, and analysis, please refer to:
 - 📄 **Chinese Report**: [`DeepLOB-Binance.pdf`](DeepLOB-Binance.pdf)
 - 📄 **English Report**: [`DeepLOB-Binance-EN.pdf`](DeepLOB-Binance-EN.pdf)
 - 📖 **Technical Documentation**: [`deeplob_crypto_code/README.md`](deeplob_crypto_code/README.md)
-
----
-
-## 🚀 Quick Start
-
-```bash
-cd deeplob_crypto_code
-
-# Install dependencies
-pip install torch numpy pandas scikit-learn matplotlib seaborn pyyaml tqdm tardis-dev huggingface_hub
-
-# Run best model (TCN + EMA)
-python3 7_baseline_tcu_ema.py
-```
-
-For detailed instructions, see [`deeplob_crypto_code/README.md`](deeplob_crypto_code/README.md).
 
 ---
 
@@ -71,9 +55,9 @@ For detailed instructions, see [`deeplob_crypto_code/README.md`](deeplob_crypto_
   - 50 symbols, 3 months
 
 ### Pre-trained Model Weights (HuggingFace)
-- **Baseline (LSTM)**: [yinelon/deeplob_crypto_baseline](https://huggingface.co/yinelon/deeplob_crypto_baseline)
-- **EMA Smoothing (LSTM)**: [yinelon/deeplob_crypto_ema](https://huggingface.co/yinelon/deeplob_crypto_ema)
-- **TCN + EMA** ⭐: [yinelon/deeplob_crypto_tcn](https://huggingface.co/yinelon/deeplob_crypto_tcn)
+- **Baseline**: [yinelon/deeplob_crypto_baseline](https://huggingface.co/yinelon/deeplob_crypto_baseline)
+- **EMA Smoothing**: [yinelon/deeplob_crypto_ema](https://huggingface.co/yinelon/deeplob_crypto_ema)
+- **TCN + EMA**: [yinelon/deeplob_crypto_tcn](https://huggingface.co/yinelon/deeplob_crypto_tcn)
 - **Hierarchical Model**: [yinelon/hierarchical_modeling](https://huggingface.co/yinelon/hierarchical_modeling)
 
 ---
