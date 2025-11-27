@@ -55,7 +55,7 @@ This script:
 
 Configuration is in `2_config.json`.
 
-### 3. Baseline Training (LSTM)
+### 3. Deeplob Baseline
 
 ```bash
 python3 3_deeplob_baseline.py
@@ -78,7 +78,7 @@ Trains DeepLOB with Temporal Convolutional Network:
 - Fully parallelizable architecture
 - Outputs saved to `5_models/` directory
 
-### 5. EMA Smoothing Training (LSTM)
+### 5. EMA Smoothing Training
 
 ```bash
 python3 6_baseline_ema.py
