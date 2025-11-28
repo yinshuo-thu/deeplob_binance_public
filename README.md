@@ -4,7 +4,7 @@
 
 yins25@mails.tsinghua.edu.cn
 
-This repository contains a **Millennium ML Internship Take-Home Project** focused on building high-frequency limit order book (LOB) prediction models for cryptocurrency markets using deep learning.
+This repository contains a **ML Internship Take-Home Project** focused on building high-frequency limit order book (LOB) prediction models for cryptocurrency markets using deep learning.
 
 ---
 
